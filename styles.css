@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.game-box {
+    transition: transform 0.3s;
+}
+
+.game-box:hover {
+    transform: scale(1.05);
+}
+
+.star {
+    cursor: pointer;
+    font-size: 24px;
+    color: lightgray;
+}
+
+.star.filled {
+    color: gold;
+}

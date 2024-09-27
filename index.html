@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Gaming Website</title>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white">
+
+    <div class="container mx-auto p-6">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-3xl font-bold">Gaming Website</h1>
+            <button id="modeToggle" class="bg-blue-500 text-white px-4 py-2 rounded">Toggle Dark/Light Mode</button>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+            <!-- Game Item 1 -->
+            <div class="game-box border rounded-lg p-4 shadow-lg flex flex-col justify-between">
+                <h2 class="text-xl font-semibold">Rock Paper Scissors</h2>
+                <p class="hidden">Play the classic game of Rock, Paper, Scissors against the computer. Choose your move wisely to win!</p>
+                <a href="https://vaibhavkush.github.io/Rock-Paper-Scissor/" target="_blank" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Play</a>
+            </div>
+            <!-- Game Item 2 -->
+            <div class="game-box border rounded-lg p-4 shadow-lg flex flex-col justify-between">
+                <h2 class="text-xl font-semibold">Tic Tac Toe</h2>
+                <p class="hidden">Enjoy a game of Tic Tac Toe. Try to get three in a row before your opponent does!</p>
+                <a href="https://vaibhavkush.github.io/T3-Tic-Tac-TOE/" target="_blank" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Play</a>
+            </div>
+            <!-- Game Item 3 -->
+            <div class="game-box border rounded-lg p-4 shadow-lg flex flex-col justify-between">
+                <h2 class="text-xl font-semibold">Hangman (Hint Based)</h2>
+                <p class="hidden">Guess the word by suggesting letters. You have limited attempts, so choose wisely!</p>
+                <a href="https://vaibhavkush.github.io/Hangman-Hint-Based-Game/" target="_blank" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Play</a>
+            </div>
+            <!-- Game Item 4 -->
+            <div class="game-box border rounded-lg p-4 shadow-lg flex flex-col justify-between">
+                <h2 class="text-xl font-semibold">Hangman (Language Based)</h2>
+                <p class="hidden">Test your language skills by guessing the word. Use the hints provided to help you!</p>
+                <a href="https://vaibhavkush.github.io/Hangman-Language-Based-Game/" target="_blank" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Play</a>
+            </div>
+            <!-- Game Item 5 -->
+            <div class="game-box border rounded-lg p-4 shadow-lg flex flex-col justify-between">
+                <h2 class="text-xl font-semibold">Guess the Number</h2>
+                <p class="hidden">Try to guess the randomly generated number within a certain range. Use hints to get closer!</p>
+                <a href="https://vaibhavkush.github.io/Guess-the-Number/" target="_blank" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Play</a>
+            </div>
+            <!-- Game Item 6 -->
+            <div class="game-box border rounded-lg p-4 shadow-lg flex flex-col justify-between">
+                <h2 class="text-xl font-semibold">Snake Game</h2>
+                <p class="hidden">Control the snake and eat food to grow. Avoid running into yourself or the walls!</p>
+                <a href="https://vaibhavkush.github.io/Snake-game/" target="_blank" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Play</a>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold mb-4">Reviews</h2>
+            <div id="reviewSection" class="mb-4"></div>
+            <input type="text" id="nameInput" placeholder="Your Name" class="border rounded p-2 mb-2 w-full"/>
+            <div class="flex mb-2">
+                <span class="star" data-value="1">&#9734;</span>
+                <span class="star" data-value="2">&#9734;</span>
+                <span class="star" data-value="3">&#9734;</span>
+                <span class="star" data-value="4">&#9734;</span>
+                <span class="star" data-value="5">&#9734;</span>
+            </div>
+            <textarea id="reviewInput" placeholder="Your Review" class="border rounded p-2 mb-2 w-full"></textarea>
+            <button id="submitReview" class="bg-blue-500 text-white px-4 py-2 rounded">Submit Review</button>
+        </div>
+    </div>
+
+    <footer class="text-center mt-8">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
